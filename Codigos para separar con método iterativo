@@ -1,0 +1,31 @@
+// Tabla de verdad de la compuerta AND
+function tablaAND() {
+    console.log("\nTabla de verdad - AND");
+    console.log("A | B | A AND B");
+    console.log("----------------");
+    for (let A = 0; A <= 1; A++) {
+        for (let B = 0; B <= 1; B++) {
+            let resultado = A & B;
+            console.log(`${A} | ${B} | ${resultado}`);
+        }
+    }
+    console.log("----------------\n");
+}
+
+tablaAND();
+
+// Tabla de verdad de la compuerta OR
+function tablaOR() {
+    console.log("\nTabla de verdad - OR");
+    console.log("A | B | A OR B");
+    console.log("----------------");
+    for (let A = 0; A <= 1; A++) {
+        for (let B = 0; B <= 1; B++) {
+            let resultado = A | B;
+            console.log(`${A} | ${B} | ${resultado}`);
+        }
+    }
+    console.log("----------------\n");
+}
+
+tablaOR();
